@@ -26,8 +26,9 @@ then
 		echo "Downloading ${TS_SOURCE}-${TS_VERSION}..."
 		wget -O $TS_RUNFILE $TS_URL -nv
 		echo "Change mode"
-		chmod a+x $TS_RUNFILE
 fi
+
+chmod a+x $TS_RUNFILE
 
 # On linux systems you need to set the environment variable before run
 export GODEBUG=madvdontneed=1
